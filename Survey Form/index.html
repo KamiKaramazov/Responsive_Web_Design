@@ -13,7 +13,7 @@
           Thank you for participating in our tech survey. Your feedback is valuable!
         </p>
       </header>
-      <form id="tech-survey-form">
+      <form id="survey-form">
         <!-- Input field for the respondent's name -->
         <div class="form-group">
           <label id="name-label" for="name">Your Name</label>
@@ -40,9 +40,7 @@
         </div>
         <!-- Input field for the respondent's age -->
         <div class="form-group">
-          <label id="number-label" for="number"
-            >Age<span class="clue">(optional)</span></label
-          >
+          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
           <input
             type="number"
             name="age"
@@ -55,7 +53,7 @@
         </div>
         <!-- Dropdown for the respondent's current role -->
         <div class="form-group">
-          <p>What best describes your current role in the tech industry?</p>
+          <label for="dropdown">What best describes your current role in the tech industry?</label>
           <select id="dropdown" name="role" class="form-control" required>
             <option disabled selected value>Select your current role</option>
             <option value="developer">Developer</option>
@@ -98,7 +96,7 @@
 
         <!-- Dropdown for the respondent's favorite tech programming language -->
         <div class="form-group">
-          <p>What is your favorite tech programming language?</p>
+          <label for="most-like">What is your favorite tech programming language?</label>
           <select id="most-like" name="mostLike" class="form-control" required>
             <option disabled selected value>Select your favorite language</option>
             <option value="javascript">JavaScript</option>
@@ -157,7 +155,7 @@
 
         <!-- Textarea for additional comments -->
         <div class="form-group">
-          <p>Do you have any comments or suggestions for us?</p>
+          <label for="comments">Do you have any comments or suggestions for us?</label>
           <textarea
             id="comments"
             class="input-textarea"
@@ -171,12 +169,12 @@
           <button type="submit" id="submit" class="submit-button">
             Submit
           </button>
-        <!-- Signature or attribution -->
-        <div class="signature">
-        <p>Made by KamiKaramazov</p>
-          </div>
         </div>
       </form>
+      <!-- Signature or attribution -->
+      <div class="signature">
+        <p>Made by KamiKaramazov</p>
+      </div>
     </div>
   </body>
 </html>
