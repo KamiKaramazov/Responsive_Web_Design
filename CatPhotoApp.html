@@ -1,92 +1,91 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <!-- Define character encoding for the document -->
-        <meta attribute="head" charset="UTF-8">
-        <!-- Set the title of the web page -->
-        <title>CatPhotoApp</title>
-    </head>
-    <body>
-        <main>
-            <h1>CatPhotoApp</h1>
-            <!-- Start of the first section -->
-            <section>
-                <h2>Cat Photos</h2>
-                <!-- A TODO comment indicating a task to be completed -->
-                <!-- Link to cat photos that opens in a new tab -->
-                <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
-                <!-- An image of a cute cat -->
-                <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
-            </section>
-            <!-- End of the first section -->
+<head>
+    <!-- Define character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Set the title of the web page -->
+    <title>CatPhotoApp</title>
+</head>
+<body>
+    <main>
+        <h1>CatPhotoApp</h1>
+        <!-- Start of the first section -->
+        <section>
+            <h2>Cat Photos</h2>
+            <!-- A comment indicating a task to be completed -->
+            <!-- Link to cat photos that opens in a new tab -->
+            <p>See more <a target="_blank" href="https://images.pexels.com/photos/179237/pexels-photo-179237.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">cat photos</a> in our gallery.</p>
+            <!-- An image of a cute cat -->
+            <a href="https://example.com"><img src="https://images.pexels.com/photos/14440677/pexels-photo-14440677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="A cute orange cat lying on its back." width="300" height="300"></a>
+        </section>
+        <!-- End of the first section -->
 
-            <!-- Start of the second section -->
-            <section>
-                <h2>Cat Lists</h2>
-                <h3>Things cats love:</h3>
-                <!-- Unordered list of things cats love -->
-                <ul>
-                    <li>cat nip</li>
-                    <li>laser pointers</li>
-                    <li>lasagna</li>
-                </ul>
-                <!-- Figure element containing an image and a caption -->
-                <figure>
-                    <!-- An image of lasagna -->
-                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
-                    <!-- Caption for the image -->
-                    <figcaption>Cats <em>love</em> lasagna.</figcaption>
-                </figure>
-                <h3>Top 3 things cats hate:</h3>
-                <!-- Ordered list of things cats hate -->
-                <ol>
-                    <li>flea treatment</li>
-                    <li>thunder</li>
-                    <li>other cats</li>
-                </ol>
-                <!-- Another figure element containing an image and a caption -->
-                <figure>
-                    <!-- An image of cats in a field -->
-                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
-                    <!-- Caption for the image -->
-                    <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
-                </figure>
-            </section>
-            <!-- End of the second section -->
+        <!-- Start of the second section -->
+        <section>
+            <h2>Cat Lists</h2>
+            <h3>Things cats love:</h3>
+            <!-- Unordered list of things cats love -->
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+            <!-- Figure element containing an image and a caption -->
+            <figure>
+                <!-- An image of lasagna -->
+                <img src="https://images.pexels.com/photos/4162496/pexels-photo-4162496.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="A slice of lasagna on a plate." width="300" height="200">
+                <!-- Caption for the image -->
+                <figcaption>Cats <em>love</em> lasagna.</figcaption>
+            </figure>
+            <h3>Top 3 things cats hate:</h3>
+            <!-- Ordered list of things cats hate -->
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+            <!-- Another figure element containing an image and a caption -->
+            <figure>
+                <!-- An image of cats in a field -->
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs1.best-wallpaper.net%2Fwallpaper%2Fm%2F1709%2FFive-cats_m.jpg&f=1&nofb=1&ipt=a7b4835ecca00393478907b49a8876bdb1b83bb0d4b5b06586c264ed12e04cb6&ipo=images" alt="Five cats looking around a field." width="300" height="200">
+                <!-- Caption for the image -->
+                <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+            </figure>
+        </section>
+        <!-- End of the second section -->
 
-            <!-- Start of the third section -->
-            <section>
-                <h2>Cat Form</h2>
-                <!-- A form element with an action attribute specifying the form submission URL -->
-                <form action="https://freecatphotoapp.com/submit-cat-photo">
-                    <fieldset>
-                        <legend>Is your cat an indoor or outdoor cat?</legend>
-                        <!-- Radio buttons to choose if the cat is indoor or outdoor -->
-                        <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
-                        <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>What's your cat's personality?</legend>
-                        <!-- Checkboxes to select the cat's personality traits -->
-                        <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
-                        <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
-                        <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
-                    </fieldset>
-                    <!-- Text input for entering a cat photo URL -->
-                    <input type="text" name="catphotour" placeholder="cat photo URL" required>
-                    <!-- Submit button for the form -->
-                    <button type="submit">Submit</button>
-                </form>
-            </section>
-            <!-- End of the third section -->
-        </main>
+        <!-- Start of the third section -->
+        <section>
+            <h2>Cat Form</h2>
+            <!-- A form element with an action attribute specifying the form submission URL -->
+            <form action="https://example.com/submit-cat-photo">
+                <fieldset>
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <!-- Radio buttons to choose if the cat is indoor or outdoor -->
+                    <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+                    <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+                </fieldset>
+                <fieldset>
+                    <legend>What's your cat's personality?</legend>
+                    <!-- Checkboxes to select the cat's personality traits -->
+                    <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+                    <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+                    <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+                </fieldset>
+                <!-- Text input for entering a cat photo URL -->
+                <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                <!-- Submit button for the form -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <!-- End of the third section -->
+    </main>
 
-        <!-- Footer section with copyright information -->
-        <footer>
-            <p>
-                No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
-            </p>
-        </footer>
-    </body>
+    <!-- Footer section with copyright information -->
+    <footer>
+        <p>
+            No Copyright - <a href="https://example.com">example.com</a>
+        </p>
+    </footer>
+</body>
 </html>

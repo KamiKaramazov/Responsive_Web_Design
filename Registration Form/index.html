@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Specify the character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Set the title of the page -->
+    <title>Registration Form</title>
+    <!-- Link to an external stylesheet for styling -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Main heading for the registration form -->
+    <h1>Registration Form</h1>
+    <!-- Instruction for the user -->
+    <p>Please fill out this form with the required information</p>
+    <!-- Start of the registration form -->
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <!-- Fieldset for personal information -->
+      <fieldset>
+        <!-- Label and input for first name -->
+        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <!-- Label and input for last name -->
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+        <!-- Label and input for email -->
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        <!-- Label and input for creating a new password -->
+        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <!-- Fieldset for account type and terms -->
+      <fieldset>
+        <!-- Radio buttons for selecting account type -->
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business Account</label>
+        <!-- Checkbox for accepting terms and conditions -->
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.example.com/terms-and-conditions/">terms and conditions</a>
+        </label>
+      </fieldset>
+      <!-- Fieldset for additional information -->
+      <fieldset>
+        <!-- Input for uploading a profile picture -->
+        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+        <!-- Input for specifying age -->
+        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+        <!-- Dropdown menu for specifying how the user heard about the site -->
+        <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Source 1</option>
+            <option value="2">Source 2</option>
+            <option value="3">Source 3</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <!-- Text area for providing a bio -->
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Tell us about yourself..."></textarea>
+        </label>
+      </fieldset>
+      <!-- Submit button for submitting the form -->
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

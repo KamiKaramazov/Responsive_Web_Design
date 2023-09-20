@@ -1,6 +1,8 @@
+/* CSS Section */
+
 body {
   /* Set background image for the body */
-  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fc%2Fc5%2FRoasted_coffee_beans.jpg&f=1&nofb=1&ipt=34edabdefec517ee14432ca9c578cc36929776fb1aaefe2d29177f82fbf2996a&ipo=images);
   /* Set the font family for the entire page */
   font-family: sans-serif;
   /* Add padding around the body content */
@@ -125,4 +127,20 @@ a:hover {
 a:active {
   /* Set color for active links */
   color: brown;
+}
+
+/* Define a class for resizing icons */
+.icon {
+  width: 90px; /* Set your desired width */
+  height: 90px; /* Set your desired height */
+}
+
+/* Add this CSS to your styles.css file */
+.icon {
+  margin-left: 20px; /* Adjust the margin to your preference */
+}
+
+/* Center the main content */
+main {
+  text-align: center;
 }
