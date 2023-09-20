@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <!-- Title of the tech survey form -->
+        <h1 id="title" class="text-center">Tech Survey Form</h1>
+        <!-- Description of the tech survey form -->
+        <p id="description" class="description text-center">
+          Thank you for participating in our tech survey. Your feedback is valuable!
+        </p>
+      </header>
+      <form id="tech-survey-form">
+        <!-- Input field for the respondent's name -->
+        <div class="form-group">
+          <label id="name-label" for="name">Your Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <!-- Input field for the respondent's email -->
+        <div class="form-group">
+          <label id="email-label" for="email">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <!-- Input field for the respondent's age -->
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Enter your age"
+          />
+        </div>
+        <!-- Dropdown for the respondent's current role -->
+        <div class="form-group">
+          <p>What best describes your current role in the tech industry?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select your current role</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="data-analyst">Data Analyst</option>
+            <option value="student">Student</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- Radio buttons for recommending the tech platform -->
+        <div class="form-group">
+          <p>Would you recommend our tech platform to others?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+
+        <!-- Dropdown for the respondent's favorite tech programming language -->
+        <div class="form-group">
+          <p>What is your favorite tech programming language?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select your favorite language</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="ruby">Ruby</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- Checkboxes for tech interests -->
+        <div class="form-group">
+          <p>Which tech areas are you most interested in?</p>
+
+          <label
+            ><input
+              name="prefer"
+              value="web-development"
+              type="checkbox"
+              class="input-checkbox"
+            />Web Development</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="machine-learning"
+              type="checkbox"
+              class="input-checkbox"
+            />Machine Learning</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="mobile-apps"
+              type="checkbox"
+              class="input-checkbox"
+            />Mobile App Development</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="cybersecurity"
+              type="checkbox"
+              class="input-checkbox"
+            />Cybersecurity</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="cloud-computing"
+              type="checkbox"
+              class="input-checkbox"
+            />Cloud Computing</label
+          >
+        </div>
+
+        <!-- Textarea for additional comments -->
+        <div class="form-group">
+          <p>Do you have any comments or suggestions for us?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        <!-- Signature or attribution -->
+        <div class="signature">
+        <p>Made by KamiKaramazov</p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

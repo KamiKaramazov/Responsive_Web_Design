@@ -1,0 +1,201 @@
+/* CSS Section */
+
+/* Import the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300i,400&display=swap');
+
+/* Import the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300i,400&display=swap');
+
+/* Define custom colors using CSS variables */
+:root {
+  --primary-bg: #1b1b32;
+  --secondary-bg: rgba(27, 27, 50, 0.8);
+  --primary-text: #f3f3f3;
+  --accent-color: #37af65; /* Changed the accent color to green */
+}
+
+/* Apply a global box-sizing value and font styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the body and add a background image */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--primary-text); /* Use primary text color variable */
+  margin: 0;
+  /* Use a pseudo-element to create a background image */
+  background: var(--primary-bg); /* Use primary background color variable */
+  background-image: linear-gradient(
+    115deg,
+    rgba(78, 245, 78, 0.8),
+    rgba(73, 224, 224, 0.7)
+  ),
+  url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Style heading elements */
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Style paragraphs */
+p {
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+/* Apply styles to labels */
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Reset margin and font styles for form controls */
+input, button, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Remove button border */
+button {
+  border: none;
+}
+
+/* Create a container for the form */
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+
+/* Responsive container widths */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Style the header */
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+/* Style the description */
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* Style clue text */
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #e4e4e4;
+}
+
+/* Center align text */
+.text-center {
+  text-align: center;
+}
+
+/* Style the form */
+form {
+  background: var(--secondary-bg);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+}
+
+/* Responsive form padding */
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+
+/* Style form groups */
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+/* Style form controls */
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Style focus state for form controls */
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Style radio buttons and checkboxes */
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+/* Style textareas */
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+/* Style the submit button */
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--accent-color); /* Changed the button background color to green */
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* Add this CSS to style the signature */
+.signature {
+  text-align: center;
+  font-size: 0.9rem; /* Adjust the font size as needed */
+  font-style: italic; /* Apply italic style */
+  color: #61e0f7; /* Change the color to a subdued one */
+  margin-top: 1rem; /* Add some space above the signature */
+}
