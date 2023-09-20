@@ -1,0 +1,56 @@
+/* Center-align text in h1 element */
+h1 {
+    text-align: center;
+  }
+  
+  /* Style for the container */
+  .container {
+    background-color: rgb(255, 255, 255); /* White background color */
+    padding: 10px 0; /* Padding for top and bottom */
+  }
+  
+  /* Style for the marker */
+  .marker {
+    width: 200px; /* Set width */
+    height: 25px; /* Set height */
+    margin: 10px auto; /* Center horizontally with margin */
+  }
+  
+  /* Style for the cap */
+  .cap {
+    width: 60px; /* Set width */
+    height: 25px; /* Set height */
+  }
+  
+  /* Style for the sleeve */
+  .sleeve {
+    width: 110px; /* Set width */
+    height: 25px; /* Set height */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    border-left: 10px double rgba(0, 0, 0, 0.75); /* Double border on the left */
+  }
+  
+  /* Display cap and sleeve inline */
+  .cap, .sleeve {
+    display: inline-block;
+  }
+  
+  /* Style for the red marker */
+  .red {
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27)); /* Gradient background */
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8); /* Box shadow with RGBA color */
+  }
+  
+  /* Style for the green marker */
+  .green {
+    background: linear-gradient(#55680D, #71F53E, #116C31); /* Gradient background */
+    box-shadow: 0 0 20px 0 #3B7E20CC; /* Box shadow with hex color and alpha */
+  }
+  
+  /* Style for the blue marker */
+  .blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%)); /* Gradient background using HSL */
+    /* Replace box-shadow color with HSLA function */
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+  }
+  
