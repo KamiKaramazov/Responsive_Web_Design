@@ -1,95 +1,128 @@
 body {
-    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
-    font-family: sans-serif;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-  
-  h2 {
-    font-size: 30px;
-  }
-  
-  .established {
-    font-style: italic;
-  }
-  
-  h1, h2, p {
-    text-align: center;
-  }
-  
-  .menu {
-    width: 80%;
-    background-color: burlywood;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    max-width: 500px;
-  }
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -25px; /* Add a negative top margin to reduce space */
-  }
-  
+  /* Set background image for the body */
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  /* Set the font family for the entire page */
+  font-family: sans-serif;
+  /* Add padding around the body content */
+  padding: 20px;
+}
+
+h1 {
+  /* Increase the font size for h1 elements */
+  font-size: 40px;
+  /* Remove top margin for h1 elements */
+  margin-top: 0;
+  /* Add bottom margin for h1 elements */
+  margin-bottom: 15px;
+}
+
+h2 {
+  /* Increase the font size for h2 elements */
+  font-size: 30px;
+}
+
+.established {
+  /* Italicize text with the class "established" */
+  font-style: italic;
+}
+
+h1, h2, p {
+  /* Center-align h1, h2, and p elements */
+  text-align: center;
+}
+
+.menu {
+  /* Set the width of the menu */
+  width: 80%;
+  /* Set background color for the menu */
+  background-color: burlywood;
+  /* Center the menu horizontally */
+  margin-left: auto;
+  margin-right: auto;
+  /* Add padding to the menu */
+  padding: 20px;
+  /* Set the maximum width of the menu */
+  max-width: 500px;
+}
+
+img {
+  /* Center-align images */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* Add a negative top margin to reduce space */
+  margin-top: -25px;
+}
+
 hr {
-    height: 2px;
-    background-color: brown;
-    border-color: brown;
-  }
-  
-  .bottom-line {
-    margin-top: 25px;
-  }
-  
-  h1, h2 {
-    font-family: Impact, serif;
-  }
-  
-  .item p {
-    display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 18px;
-  }
-  
-  .flavor, .dessert {
-    text-align: left;
-    width: 75%;
-  }
-  
-  .price {
-    text-align: right;
-    width: 25%;
-  }
-  
-  /* FOOTER */
-  
-  footer {
-    font-size: 14px;
-  }
-  
-  .address {
-    margin-bottom: 5px;
-  }
-  
-  a {
-    color: black;
-  }
-  
-  a:visited {
-    color: black;
-  }
-  
-  a:hover {
-    color: brown;
-  }
-  
-  a:active {
-    color: brown;
-  }  
+  /* Set the height and background color of horizontal lines */
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+.bottom-line {
+  /* Add margin to the bottom line */
+  margin-top: 25px;
+}
+
+h1, h2 {
+  /* Set font family for h1 and h2 elements */
+  font-family: Impact, serif;
+}
+
+.item p {
+  /* Display p elements as inline-block */
+  display: inline-block;
+  /* Add margin to p elements */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /* Set font size for p elements */
+  font-size: 18px;
+}
+
+.flavor, .dessert {
+  /* Left-align flavor and dessert text */
+  text-align: left;
+  /* Set width for flavor and dessert text */
+  width: 75%;
+}
+
+.price {
+  /* Right-align price text */
+  text-align: right;
+  /* Set width for price text */
+  width: 25%;
+}
+
+/* FOOTER */
+
+footer {
+  /* Set font size for footer text */
+  font-size: 14px;
+}
+
+.address {
+  /* Add margin to the address */
+  margin-bottom: 5px;
+}
+
+a {
+  /* Set color for links */
+  color: black;
+}
+
+a:visited {
+  /* Set color for visited links */
+  color: black;
+}
+
+a:hover {
+  /* Set color for links on hover */
+  color: brown;
+}
+
+a:active {
+  /* Set color for active links */
+  color: brown;
+}
