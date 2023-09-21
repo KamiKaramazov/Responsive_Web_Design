@@ -1,0 +1,55 @@
+/* Style the canvas */
+.canvas {
+    width: 500px;
+    height: 600px;
+    background-color: #4d0f00; /* Dark brown background color */
+    overflow: hidden;
+    filter: blur(2px); /* Apply a blur effect to the canvas */
+}
+
+/* Style the frame */
+.frame {
+    border: 50px solid black; /* Black border */
+    width: 500px;
+    padding: 50px;
+    margin: 20px auto; /* Center the frame horizontally and add margin at the top */
+}
+
+/* Style the first colored block */
+.one {
+    width: 425px;
+    height: 150px;
+    background-color: #efb762; /* Light brown background color */
+    margin: 20px auto; /* Center the block horizontally and add margin at the top */
+    box-shadow: 0 0 3px 3px #efb762; /* Add a shadow effect */
+    border-radius: 9px; /* Rounded corners */
+    transform: rotate(-0.6deg); /* Slightly rotate the block */
+}
+
+/* Style the second colored block */
+.two {
+    width: 475px;
+    height: 200px;
+    background-color: #8f0401; /* Dark red background color */
+    margin: 0 auto 20px; /* Center the block horizontally and add margin at the bottom */
+    box-shadow: 0 0 3px 3px #8f0401; /* Add a shadow effect */
+    border-radius: 8px 10px; /* Rounded corners with different radii */
+    transform: rotate(0.4deg); /* Slightly rotate the block */
+}
+
+/* Apply blur effect to the first and second blocks */
+.one, .two {
+    filter: blur(1px); /* Apply a blur effect */
+}
+
+/* Style the third colored block */
+.three {
+    width: 91%;
+    height: 28%;
+    background-color: #b20403; /* Darker red background color */
+    margin: auto; /* Center the block horizontally */
+    filter: blur(2px); /* Apply a blur effect */
+    box-shadow: 0 0 5px 5px #b20403; /* Add a shadow effect */
+    border-radius: 30px 25px 60px 12px; /* Custom rounded corners */
+    transform: rotate(-0.2deg); /* Slightly rotate the block */
+}
