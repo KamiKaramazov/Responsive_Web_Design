@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #f5f6f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .header {
+            text-align: center;
+            text-transform: uppercase;
+            padding: 32px;
+            background-color: #0a0a23;
+            color: #fff;
+            border-bottom: 4px solid #fdb347;
+            width: 100%; /* Make the header span the entire width */
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+            max-width: 1400px;
+            padding: 20px 10px;
+        }
+
+        .gallery-item {
+            width: 350px;
+            max-width: 100%;
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            border: 4px solid #333; /* Add a frame around each image */
+            border-radius: 10px;
+            margin: 8px; /* Add spacing around each image */
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px; /* Apply rounded corners to the image */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Flexbox Photo Gallery</h1>
+    </header>
+
+    <!-- Gallery Section -->
+    <div class="gallery-container">
+        <!-- Individual Gallery Items with Images -->
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2F0fGVufDB8MXwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="A beautiful landscape">
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2F0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="A colorful cityscape">
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1561948955-570b270e7c36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2F0fGVufDB8MXwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="A stunning sunset">
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNhdHxlbnwwfDF8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="A cute kitten">
+        </div>
+        <!-- Add more gallery items as needed -->
+    </div>
+</body>
+</html>
